@@ -54,6 +54,28 @@ from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
 ```
 
+## 🛠️ Hyperparameter Tuning
+
+Used `GridSearchCV` to find the best parameters for each model with **3-fold cross-validation**. Below are the parameters tuned for each model:
+
+- **Logistic Regression**:  
+  - `C`: Inverse of regularization strength  
+  - `solver`: Algorithm to use in the optimization problem
+
+- **Decision Tree**:  
+  - `max_depth`: Maximum depth of the tree  
+  - `min_samples_split`: Minimum number of samples required to split an internal node
+
+- **Random Forest**:  
+  - `n_estimators`: Number of trees in the forest  
+  - `max_depth`: Maximum depth of the tree  
+  - `min_samples_split`: Minimum number of samples required to split an internal node
+
+- **XGBoost Classifier**:  
+  - `n_estimators`: Number of boosting rounds  
+  - `max_depth`: Maximum depth of a tree  
+  - `learning_rate`: Step size shrinkage used to prevent overfitting
+
 ## 📬 Contact
 
 For any queries or suggestions, feel free to reach out:
